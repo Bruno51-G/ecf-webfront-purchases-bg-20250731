@@ -1,7 +1,7 @@
 /*
 PURCHASES CSS
 
-@author: NOM Prénom
+@author: GODBILLOT Bruno
 @version: 1.0
 @date: 2025-07-31
 @description: Code CSS pour la page des demandes d'achats.
@@ -18,11 +18,118 @@ PURCHASES CSS
     --crm-success: #488287;
 }
 
+.title{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;   /* Vous pouvez modifier la police */
-    background-color: var(--dark);   /* Vous pouvez changer la couleur de fond */
-    color: var(--light);   /* Vous pouvez changer la couleur du texte */
+    background: linear-gradient(to bottom right, var(--crm-secondary), var(--light));   /* Vous pouvez changer la couleur de fond */
+    color: var(--crm-primary);   /* Vous pouvez changer la couleur du texte */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+fieldset{
+    border: 1px solid var(--crm-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px var(--dark);
+    font-weight: bolder;
+}
+
+label{
+    display: inline-block;
+    width: 200px;
+       
+}
+
+input{
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid var(--crm-primary);
+    transition: 1s;
+}
+
+textarea{
+    border-radius: 5px;
+    border: 2px solid var(--crm-primary);
+    transition: 1s;
+}
+
+select{
+    border-radius: 5px;
+    border: 2px solid var(--crm-primary);
+    transition: 1s;
+}
+
+input:hover{
+    transform: scale(1.1);
+}
+
+textarea:hover{
+    transform: scale(1.1);
+}
+
+select:hover{
+    transform: scale(1.1);
+}
+
+#justificationDemande{
+    width: 500px;
+}
+
+legend{
+    border: 1px solid var(--crm-primary);
+    border-radius: 5px;
+    background-color: var(--crm-primary);
+    color: var(--light);
+    padding: 5px;
+}
+
+.conteneurBouton{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+button{
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--crm-primary);
+    color: var(--light);
+    border: 1px solid var(--crm-primary);
+    box-shadow: 10px 10px 5px var(--dark);
+
+}
+
+#alerte{
+    color: var(--crm-alert);
+}
+
+footer{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
 }
 
