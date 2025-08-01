@@ -22,22 +22,22 @@
                 <legend>Informations de l'émetteur de la demande :</legend>
 
                 <div class="conteneur">
-                    <label for="nom">Nom :</label>
+                    <label for="nom">Nom* :</label>
                     <input type="text" id="nom" required placeholder="Entrez votre nom de famille.">
                 </div>
 
                 <div class="conteneur">
-                    <label for="prenom">Prénom :</label>
+                    <label for="prenom">Prénom* :</label>
                     <input type="text" id="prenom" required placeholder="Entrez votre prénom.">
                 </div>
 
                 <div class="conteneur">
-                    <label for="adresseMail">E-Mail :</label>
+                    <label for="adresseMail">E-Mail* :</label>
                     <input type="email" id="adresseMail" required placeholder="Entrez votre adresse mail.">
                 </div>
 
                 <div class="conteneur">
-                    <label for="services">Services :</label>
+                    <label for="services">Services* :</label>
                     <select id="services">
                         <option>Comptabilité</option>
                         <option>Ressources humaines</option>
@@ -52,22 +52,22 @@
                 <legend>Détails de l'article demandé :</legend>
 
                 <div class="conteneur">
-                    <label for="nomArticle">Nom de l'article :</label>
+                    <label for="nomArticle">Nom de l'article* :</label>
                     <input type="text" id="nomArticle" required placeholder="Nom de votre article.">
                 </div>
 
                 <div class="conteneur">
-                    <label for="descriptionArticle">Description de l'article :</label>
+                    <label for="descriptionArticle">Description de l'article* :</label>
                     <textarea id="descriptionArticle" cols="30" rows="3" required placeholder="Décrivez votre article."></textarea>
                 </div>
 
                 <div class="conteneur">
-                    <label for="quantiteArticle">Quantité (1-1000) :</label>
+                    <label for="quantiteArticle">Quantité (1-1000)* :</label>
                     <input type="number" id="quantiteArticle" min="1" max="1000" required>
                 </div>
 
                 <div class="conteneur">
-                    <label for="prixUnitaire">Prix unitaire arrondi à l'Euro supérieur :</label>
+                    <label for="prixUnitaire">Prix unitaire arrondi à l'Euro supérieur* :</label>
                     <input type="number" id="prixUnitaire" step="0.01" min="0.5" required>
                 </div>
 
@@ -92,9 +92,11 @@
                 <button id="annuleDemande">Annuler</button>
             </div>
 
+            <p id="alerte"> </p>
+
         </form>
 
-            <p id="alerte"> </p>
+            
     </main>
 
     <footer class="info">

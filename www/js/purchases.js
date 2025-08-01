@@ -7,15 +7,14 @@ const descriptionArticle = document.getElementById('descriptionArticle');
 const quantiteArticle = document.getElementById('quantiteArticle');
 const prixUnitaire = document.getElementById('prixUnitaire');
 const dateLivraison = document.getElementById('dateLivraison');
-const justificationDemande = document.getElementById('justificationDeamnde');
+const justificationDemande = document.getElementById('justificationDemande');
 const envoieDemande = document.getElementById('envoieDemande');
 const annuleDemande = document.getElementById('annuleDemande');
 const alerte = document.getElementById('alerte');
 
-
 function verifIdentiter(event){
     
-    event.preventDafault();
+    event.preventDefault();
 
     let verifNom = nom.value.trim().length;
     let verifPrenom = prenom.value.trim().length;
@@ -34,3 +33,4 @@ function verifIdentiter(event){
 }
 
 envoieDemande.addEventListener('click', verifIdentiter);
+

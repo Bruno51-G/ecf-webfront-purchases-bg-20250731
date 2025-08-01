@@ -25,6 +25,20 @@ PURCHASES CSS
 }
 
 
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+form{
+    background-color: var(--crm-secondary);
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid var(--crm-primary);
+    background: linear-gradient(to top left, var(--crm-secondary), var(--light));
+    box-shadow: 10px 10px 5px var(--dark);
+}
 
 body {
     margin: 0;
@@ -37,10 +51,10 @@ body {
 }
 
 fieldset{
-    border: 1px solid var(--crm-primary);
+    border: 2px solid var(--crm-primary);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     width: 800px;
     margin-top: 50px;
     border-radius: 5px;
@@ -50,27 +64,17 @@ fieldset{
 
 label{
     display: inline-block;
-    width: 200px;
+    width: 400px;
        
 }
 
-input{
-    width: 200px;
+input, textarea, select{
+    width: 250px;
     border-radius: 5px;
     border: 2px solid var(--crm-primary);
     transition: 1s;
-}
-
-textarea{
-    border-radius: 5px;
-    border: 2px solid var(--crm-primary);
-    transition: 1s;
-}
-
-select{
-    border-radius: 5px;
-    border: 2px solid var(--crm-primary);
-    transition: 1s;
+    padding: 7px;
+    vertical-align: middle;
 }
 
 input:hover{
@@ -119,17 +123,22 @@ button{
 
 #alerte{
     color: var(--crm-alert);
+    text-align: center;
+    font-weight: bolder;
 }
 
 footer{
+    margin-top: 50px;
     width: 100%;
 }
 
 h2{
     text-align: center;
+    margin-bottom: 50px;
 }
 
 p{
-    text-align: center;
-}
+    text-align: justify;
+} 
+
 
