@@ -72,22 +72,11 @@ input, textarea, select{
     width: 250px;
     border-radius: 5px;
     border: 2px solid var(--crm-primary);
-    transition: 1s;
     padding: 7px;
     vertical-align: middle;
 }
 
-input:hover{
-    transform: scale(1.1);
-}
 
-textarea:hover{
-    transform: scale(1.1);
-}
-
-select:hover{
-    transform: scale(1.1);
-}
 
 #justificationDemande{
     width: 500px;
@@ -118,7 +107,12 @@ button{
     color: var(--light);
     border: 1px solid var(--crm-primary);
     box-shadow: 10px 10px 5px var(--dark);
+    transition: 1s;
+}
 
+button:hover{
+    transform: scale(1.1);
+    background-color: var(--crm-success);
 }
 
 #alerte{
